@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/simple_white_bg" >
+
+    <TextView
+        android:id="@+id/grid_category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:background="@drawable/category_layer"
+        android:gravity="center"
+        android:padding="3.0dip"
+        android:scrollbars="none"
+        android:text="Category"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/category"
+        android:textSize="20.0sp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/grid_category_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid_category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:background="@drawable/item_layer"
+        android:gravity="center"
+        android:padding="3.0dip"
+        android:scrollbars="none"
+        android:text="Number of items"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/item"
+        android:textSize="15.0sp"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="150.0dip"
+        android:layout_height="150.0dip"
+        android:layout_below="@+id/grid_category_number"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="1.0dip"
+        android:paddingTop="1.0dip"
+        android:src="@drawable/default_grid_drawable" />
+
+</RelativeLayout>
